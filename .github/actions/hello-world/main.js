@@ -1,8 +1,8 @@
-import { getInput } from "@actions/core";
+const core = require("@actions/core");
 
-const firstGreeting = getInput("first-greeting");
-const secondGreeting = getInput("second-greeting");
-const thridGreeting = getInput("third-greeting");
+const firstGreeting = core.getInput("first-greeting");
+const secondGreeting = core.getInput("second-greeting");
+const thridGreeting = core.getInput("third-greeting");
 
 console.log('Hello ${firstGreeting}')
 console.log('Hello ${secondGreeting}')
